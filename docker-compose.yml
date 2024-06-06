@@ -6,7 +6,7 @@ services:
       context: ./Course-work-Back-end
       dockerfile: Dockerfile
     ports:
-      - "9090:9090"  # Перенаправление порта контейнера на порт хоста
+      - "9090:9090"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/hardware_ecommerce
       - SPRING_DATASOURCE_USERNAME=root
@@ -19,16 +19,14 @@ services:
       context: ./Course-work-FRONT-end
       dockerfile: Dockerfile
     ports:
-      - "4200:4200"  # Перенаправление порта контейнера на порт хоста
-    environment:
-      - NODE_ENV=production
+      - "4200:4200"
     depends_on:
       - backend
 
   mysql:
     image: mysql:latest
     ports:
-      - "3306:3306"  # Перенаправление порта контейнера на порт хоста
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=12042003
       - MYSQL_DATABASE=hardware_ecommerce
