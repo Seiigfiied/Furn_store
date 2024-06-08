@@ -4,10 +4,7 @@ import com.chesnakov.hardwareecommerce.dao.CartDao;
 import com.chesnakov.hardwareecommerce.entity.Cart;
 import com.chesnakov.hardwareecommerce.service.CartService;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @CrossOrigin(origins = "http://46.253.143.107:4200")
