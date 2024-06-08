@@ -8,7 +8,7 @@ import { Order } from '../_model/order.model';
   providedIn: 'root',
 })
 export class ProductService {
-  PATH_OF_API = 'http://localhost:9090';
+  PATH_OF_API = 'http://46.253.143.107:9090';
   constructor(private httpClient: HttpClient) {}
 
   public addProduct(product: FormData) {
