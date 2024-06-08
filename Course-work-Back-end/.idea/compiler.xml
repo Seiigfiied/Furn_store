@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Course-work.-Construction-materials-store-Back-end" />
         <module name="Hardware-ECommerce" />
+        <module name="Course-work-Back-end" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Course-work-Back-end" options="-parameters" />
       <module name="Course-work.-Construction-materials-store-Back-end" options="-parameters" />
       <module name="Hardware-ECommerce" options="-parameters" />
     </option>
