@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Set;
-
+@CrossOrigin(origins = "http://46.253.143.107:4200")
 @RestController
 public class ProductController {
 

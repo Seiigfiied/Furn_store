@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
-
+@CrossOrigin(origins = "http://46.253.143.107:4200")
 @RestController
 public class UserController {
 

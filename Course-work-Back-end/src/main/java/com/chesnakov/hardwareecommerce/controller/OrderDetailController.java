@@ -7,7 +7,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://46.253.143.107:4200")
 @RestController
 public class OrderDetailController {
     private final OrderDetailService orderDetailService;
